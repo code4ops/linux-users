@@ -136,7 +136,7 @@ if __name__ == "__main__":
 
     if args.users:
         print_results(s_users, sort_field)
-    if args.all:
+    if args.all and not args.users:
         print_results(s_users, sort_field)
 
     if args.dup_usernames or args.all:
